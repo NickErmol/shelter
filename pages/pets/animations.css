@@ -1,0 +1,29 @@
+.flip-out {
+  animation: flip-out 0.45s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+.flip-in {
+  animation: flip-in 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes flip-out {
+  0% {
+    transform: rotateY(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotateY(180deg);
+    opacity: 0;
+  }
+}
+
+@keyframes flip-in {
+  0% {
+    transform: rotateY(-180deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateY(0deg);
+    opacity: 1;
+  }
+}

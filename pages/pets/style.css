@@ -1,0 +1,174 @@
+.header {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  z-index: 1;
+}
+
+.header-container {
+  height: 120px;
+}
+
+.header-logo-title {
+  color: #545454;
+}
+
+.header-logo-subtitle {
+  color: #292929;
+}
+
+.header-burger-bar {
+  background-color: #000000;
+}
+
+.header-menu-item {
+  color: #545454;
+}
+
+.header-menu-link {
+  color: #545454;
+}
+
+.active:hover {
+  color: #292929;
+}
+
+.header-menu-active-link {
+  color: #292929;
+}
+
+.pets-caption {
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.pets-grid-wrapper {
+  height: 930px;
+  margin: 45px 0;
+  padding: 15px 0;
+  /*overflow: hidden;*/
+}
+
+.pets-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 30px 40px;
+  align-content: center;
+  margin: 0 auto;
+  order: 8;
+}
+
+.pet-card {
+  margin: 0 auto;
+}
+
+.pets-paginator {
+  width: 360px;
+  height: 52px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.nav-page-button, .nav-page-button:hover {
+  background-color: #f1cdb3;
+  cursor: default;
+}
+
+.pets-nav-button {
+  margin: 0 10px;
+}
+
+/* Media queries */
+@media (max-width: 1279px) {
+  .pets {
+    padding-top: 60px;
+    padding-bottom: 70px;
+  }
+
+  .pets-caption {
+    padding-top: 20px;
+  }
+
+  .pets-grid-wrapper {
+    height: 1365px;
+    margin: 30px 0 40px;
+    padding: 0;
+  }
+
+  .pets-grid {
+    width: 580px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    order: 6;
+  }
+
+  .pet-card:nth-last-child(-n+2) {
+    display: none;
+  }
+
+  .pets-paginator {
+    margin-bottom: 6px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header-menu-item {
+    color: #cdcdcd;
+  }
+
+  .header-menu-link {
+    color: #cdcdcd;
+  }
+
+  .header-menu-active-link {
+    color: #fafafa;
+    border-bottom: 3px solid #f1cbd3;
+  }
+
+  .header-menu-link:hover {
+    color: #fafafa;
+  }
+
+  .pets {
+    width: 300px;
+    padding-top: 42px;
+    padding-bottom: 42px;
+  }
+
+  .pets-caption {
+    width: 300px;
+    padding: 0;
+  }
+
+  .pets-grid-wrapper {
+    margin: 42px 0;
+  }
+
+  .pets-grid {
+    width: 270px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 30px 0;
+    order: 3;
+  }
+
+  .pet-card:nth-last-child(-n+5) {
+    display: none;
+  }
+
+  .pets-paginator {
+    width: 300px;
+    margin: 0;
+  }
+
+  .pets-nav-button {
+    margin-left: 0;
+    margin-right: 10px;
+  }
+
+  .pets-nav-button:last-child {
+    margin-right: 0;
+  }
+}

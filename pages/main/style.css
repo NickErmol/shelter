@@ -1,0 +1,421 @@
+.section-not-only {
+  background: url(../../assets/images/noise_transparent_2x.png),
+    radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), #211f20;
+}
+
+.not-only {
+  padding-top: 180px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.not-only-content {
+  width: 480px;
+  padding-top: 163px;
+}
+
+.not-only-caption {
+  width: 310px;
+}
+
+.not-only-text {
+  width: 460px;
+  padding: 42px 0;
+}
+
+.not-only-image {
+  width: 698px;
+  align-self: flex-end;
+}
+
+.about {
+  width: 850px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.about-content {
+  width: 430px;
+}
+
+.about-text {
+  padding-top: 25px;
+}
+
+.about-image {
+  width: 300px;
+}
+
+.pets-caption {
+  width: 400px;
+}
+
+.pets-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.pets-cards-window {
+  width: 1090px;
+  min-height: 435px;
+  display: flex;
+  justify-content: space-between;
+  overflow-x: hidden;
+  padding: 0 50px;
+}
+
+.pet-card {
+  transition: 0.5s;
+}
+
+.pets-button-wrapper {
+  width: 261px;
+  margin: 0 auto;
+}
+
+.pets-button {
+  width: 261px;
+}
+
+.help-items {
+  padding-top: 60px;
+  width: 1160px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.help-item {
+  width: auto;
+  height: 113px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 60px 55px 60px;
+}
+
+.help-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.help-item:nth-child(n + 6) {
+  margin: 0 60px;
+}
+
+.donation {
+  width: 915px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.donation-image {
+  width: 505px;
+  padding: 11px 0 10px;
+}
+
+.donation-content {
+  width: 380px;
+}
+
+.donation-bank-name {
+  padding: 20px 0;
+}
+
+.donation-button {
+  width: 349px;
+  height: 43px;
+  background: #f1cdb3;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+}
+
+.donation-button:hover {
+  cursor: pointer;
+  background: #fddcc4;
+  border: none;
+}
+
+.donation-account {
+  font-family: Georgia;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  letter-spacing: 0.06em;
+  margin-left: 15px;
+}
+
+.donation-account:hover {
+  border-bottom: 3px solid #545454;
+  padding-bottom: 3px;
+}
+
+.donation-description {
+  padding-top: 20px;
+  width: 360px;
+}
+
+.donation-description-text {
+  font-family: Arial;
+  font-style: italic;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: #b2b2b2;
+}
+
+/* Media queries */
+@media (max-width: 1279px) {
+  .not-only {
+    max-height: 1165px;
+    padding-top: 150px;
+    flex-direction: column;
+  }
+
+  .not-only-content {
+    width: 460px;
+    padding-top: 0;
+    padding-bottom: 100px;
+    align-self: center;
+  }
+
+  .not-only-button {
+    margin: 0 auto;
+  }
+
+  .not-only-image {
+    width: 569px;
+  }
+
+  .about {
+    width: 437px;
+    flex-direction: column;
+  }
+
+  .about-content {
+    order: 0;
+  }
+
+  .about-image {
+    padding-top: 80px;
+    order: 1;
+  }
+
+  .pets-cards-window {
+    width: 600px;
+    padding: 0 10px;
+  }
+
+  .pet-card:nth-last-child(1) {
+    display: none;
+  }
+
+  .help-items {
+    width: 632px;
+    justify-content: flex-start;
+  }
+
+  .help-item {
+    width: 170px;
+    height: 113px;
+  }
+
+  .help-item:nth-child(n) {
+    margin: 0 60px 55px 0;
+  }
+
+  .help-item:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  .help-item:nth-child(n + 7) {
+    margin-bottom: 0;
+  }
+
+  .donation {
+    width: 505px;
+    flex-direction: column;
+  }
+
+  .donation-image {
+    width: 505px;
+    order: 1;
+    padding: 63px 0 0 0;
+  }
+
+  .donation-content {
+    order: 0;
+  }
+}
+
+/* Media queries */
+@media (max-width: 767px) {
+  .not-only {
+    max-height: 823px;
+  }
+
+  .not-only-content {
+    width: 300px;
+    text-align: center;
+    padding-bottom: 105px;
+  }
+
+  .not-only-caption {
+    width: 260px;
+    margin: 0 auto;
+  }
+
+  .not-only-text {
+    width: 300px;
+  }
+
+  .not-only-image {
+    width: 260px;
+  }
+
+  .about {
+    width: 300px;
+    padding-top: 42px;
+    padding-bottom: 42px;
+  }
+
+  .about-content {
+    width: 270px;
+    text-align: justify;
+  }
+
+  .about-caption {
+    width: 270px;
+    text-align: center;
+  }
+
+  .about-text:nth-child(3) {
+    padding-top: 22px;
+  }
+
+  .about-image {
+    width: 260px;
+    padding-top: 42px;
+  }
+
+  .pets {
+    padding-top: 42px;
+    padding-bottom: 42px;
+  }
+
+  .pets-caption {
+    width: 290px;
+    text-align: center;
+  }
+
+  .pets-carousel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 42px 0;
+  }
+
+  .pets-cards-window {
+    order: -1;
+    width: 300px;
+    padding: 0 15px;
+  }
+
+  .pet-card:nth-last-child(2) {
+    display: none;
+  }
+
+  .pets-nav-button {
+    padding-top: 20px;
+    margin: 0 40px;
+  }
+
+  .help {
+    padding: 42px 0;
+  }
+
+  .help-caption {
+    width: 260px;
+    text-align: center;
+  }
+
+  .help-items {
+    width: 290px;
+    padding-top: 42px;
+  }
+
+  .help-item {
+    height: 87px;
+    width: 130px;
+  }
+
+  .help-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+  }
+
+  .help-item:nth-child(n) {
+    margin: 0 30px 30px 0;
+  }
+
+  .help-item:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .help-item:nth-child(9) {
+    margin: 0;
+  }
+
+  .donation {
+    width: 300px;
+    flex-direction: column;
+    padding-top: 42px;
+    padding-bottom: 42px;
+  }
+
+  .donation-image {
+    width: 260px;
+    padding-top: 45px;
+  }
+
+  .donation-content {
+    width: 282px;
+  }
+
+  .donation-caption {
+    width: 220px;
+    text-align: center;
+  }
+
+  .donation-bank-name {
+    text-align: center;
+  }
+
+  .donation-description {
+    width: 280px;
+    text-align: justify;
+  }
+
+  .donation-account {
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+  }
+
+  .donation-button {
+    width: 281px;
+  }
+}

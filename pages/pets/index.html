@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Shelter - Pets</title>
+    <link rel="icon" type="icon" href="../../assets/icons/shelter.ico">
+    <link rel="preload" href="https://rolling-scopes-school.github.io/i3-code-JS2020Q3/shelter/assets/pets.json" as="fetch" crossorigin>
+    <link rel="stylesheet" href="../../assets/styles/reset.css">
+    <link rel="stylesheet" href="../../assets/styles/allpages.css">
+    <link rel="stylesheet" href="./animations.css">
+    <link rel="stylesheet" href="../../assets/styles/engine.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/static/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/static/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/static/favicon-16x16.png">
+    <link rel="manifest" href="../../assets/static/site.webmanifest">
+    <link rel="mask-icon" href="../../assets/static/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body class="body" id="body">
+    <h1 class="hidden-h1" hidden>Cozy House</h1>
+    <header class="header">
+        <div class= "blackout" id="blackout" onclick="pageEngine.resetMenu()"></div>
+        <div class="content-wrapper">
+            <div class="header-container">
+                <a href="../main/">
+                    <div class="header-logo" id="header-logo">
+                        <span class="header-logo-title" id="header-logo-title">Cozy House</span>
+                        <span class="header-logo-subtitle" id="header-logo-subtitle">Shelter for pets in Boston</span>
+                    </div>
+                </a>
+                <div class="header-burger" id="header-burger" onclick="pageEngine.switchMenu()">
+                    <img src="../../assets/icons/dark-burger.svg" alt="burger icon">
+                </div>
+                <nav class="header-menu" id="header-menu">
+                    <ul class="header-menu-list">
+                        <li class="header-menu-item">
+                            <a class="header-menu-link active" href="../main/">About the shelter</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a class="header-menu-link header-menu-active-link active" href="#" onclick="pageEngine.resetMenu()">Our pets</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a class="header-menu-link default-link" href="javascript:void(0);">Help the shelter</a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a class="header-menu-link default-link" href="javascript:void(0);">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="section-gray">
+            <div class="content-wrapper">
+                <section class="block-section pets">
+                    <div class="section-caption caption-mobile pets-caption"><h3>Our friends who<br>are looking for a house</h3></div>
+                    <div class="pets-grid-wrapper">
+                        <div class="pets-grid" id="pets-grid">
+                            <div class="pet-card" id="pet-card-0" style="order: 0">
+                                <img class="pet-card-image" src="../../assets/images/blank.png" alt="">
+                                <p class="pet-card-title"></p>
+                                <button class="pet-card-button">Learn more</button>
+                            </div>
+                            <div class="pet-card" id="pet-card-1" style="order: 1">
+                                <img class="pet-card-image" src="../../assets/images/blank.png" alt="">
+                                <p class="pet-card-title"></p>
+                                <button class="pet-card-button">Learn more</button>
+                            </div>
+                            <div class="pet-card" id="pet-card-2" style="order: 2">
+                                <img class="pet-card-image" src="../../assets/images/blank.png" alt="">
+                                <p class="pet-card-title"></p>
+                                <button class="pet-card-button">Learn more</button>
+                            </div>
+                            <div class="pet-card" id="pet-card-3" style="order: 3">
+                                <img class="pet-card-image" src="../../assets/images/blank.png" alt="">
+                                <p class="pet-card-title"></p>
+                                <button class="pet-card-button">Learn more</button>
+                            </div>
+                            <div class="pet-card" id="pet-card-4" style="order: 4">
+                                <img class="pet-card-image" src="../../assets/images/blank.png" alt="">
+                                <p class="pet-card-title"></p>
+                                <button class="pet-card-button">Learn more</button>
+                            </div>
+                            <div class="pet-card" id="pet-card-5" style="order: 5">
+                                <img class="pet-card-image" src="../../assets/images/blank.png" alt="">
+                                <p class="pet-card-title"></p>
+                                <button class="pet-card-button">Learn more</button>
+                            </div>
+                            <div class="pet-card" id="pet-card-6" style="order: 6">
+                                <img class="pet-card-image" src="../../assets/images/blank.png" alt="">
+                                <p class="pet-card-title"></p>
+                                <button class="pet-card-button">Learn more</button>
+                            </div>
+                            <div class="pet-card" id="pet-card-7" style="order: 7">
+                                <img class="pet-card-image" src="../../assets/images/blank.png" alt="">
+                                <p class="pet-card-title"></p>
+                                <button class="pet-card-button">Learn more</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pets-paginator">
+                        <div class="pets-nav-button"><button class="nav-button" id="paginator-first" onclick="pageEngine.goPage(0, 1)" disabled>&lt;&lt;</button></div>
+                        <div class="pets-nav-button"><button class="nav-button" id="paginator-previous" onclick="pageEngine.goPage(0)" disabled>&lt;</button></div>
+                        <div class="pets-nav-button"><button class="nav-button nav-page-button" id="paginator-page">1</button></div>
+                        <div class="pets-nav-button"><button class="nav-button" id="paginator-next" onclick="pageEngine.goPage(1)">&gt;</button></div>
+                        <div class="pets-nav-button"><button class="nav-button" id="paginator-last" onclick="pageEngine.goPage(1, 1)">&gt;&gt;</button></div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="content-wrapper">
+            <div class="footer-container">
+                <div class="footer-contacts-container">
+                    <div class="footer-contacts">
+                        <div class="footer-contacts-caption"><h3 class="footer-h3">For questions and suggestions</h3></div>
+                        <div class="footer-contacts-item"><a href="mailto:email@shelter.com" class="footer-link"><img class="active-icon footer-icon" src="../../assets/icons/mail.svg" alt="E-mail"><h4 class="footer-h4">email@shelter.com</h4></a></div>
+                        <div class="footer-contacts-item footer-contacts-tel"><a href="tel:+136745677554" class="footer-link"><img class="active-icon footer-icon" src="../../assets/icons/phone.svg" alt="Phone"><h4 class="footer-h4">+13 674 567 75 54</h4></a></div>
+                    </div>
+                    <div class="footer-address">
+                        <div class="footer-contacts-caption"><h3 class="footer-h3">We are waiting for your visit</h3></div>
+                        <div class="footer-contacts-item"><a href="http://maps.google.com/?q=1 Central Street, Boston" target="_blank" class="footer-link"><img class="active-icon footer-icon" src="../../assets/icons/pin.svg" alt=""><h4 class="footer-h4">1 Central Street, Boston<br>(entrance from the store)</h4></a></div>
+                        <div class="footer-contacts-item"><a href="http://maps.google.com/?q=18 South Park, London" target="_blank" class="footer-link"><img class="active-icon footer-icon" src="../../assets/icons/pin.svg" alt=""><h4 class="footer-h4">18 South Park, London</h4></a></div>
+                    </div>
+                </div>
+                <div class="footer-image"><img src="../../assets/images/footer-puppy.png" alt="Woof woof"></div>
+            </div>
+        </div>
+    </footer>
+    <div class="popup popup-click" id="popup"  onclick="pageEngine.closePopup()">
+        <div class="popup-wrapper popup-click">
+            <div class="popup-close-button">
+                <button class="nav-button popup-close" id="popup-close"><img src="../../assets/icons/cross.svg" alt="Close"></button>
+            </div>
+            <div class="popup-window" id="popup-window"></div>
+        </div>
+    </div>
+    <script src="../engine.js" defer></script>
+</body>
+</html>

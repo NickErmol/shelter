@@ -1,0 +1,123 @@
+.slide-in-left {
+  animation: slide-in-left 0.495s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.slide-in-right {
+  animation: slide-in-right 0.495s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.slide-out-left {
+  animation: slide-in-left 0.495s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse
+    both;
+}
+
+.slide-out-right {
+  animation: slide-in-right 0.495s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse
+    both;
+}
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-990px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(990px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1279px) {
+  .slide-in-left {
+    animation: slide-in-left 0.29s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+
+  .slide-in-right {
+    animation: slide-in-right 0.29s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+
+  .slide-out-left {
+    animation: slide-in-left 0.29s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse
+      both;
+  }
+
+  .slide-out-right {
+    animation: slide-in-right 0.29s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse
+      both;
+  }
+
+  @keyframes slide-in-left {
+    0% {
+      transform: translateX(-580px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slide-in-right {
+    0% {
+      transform: translateX(580px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .slide-in-left {
+    animation: slide-in-left 0.135s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+
+  .slide-in-right {
+    animation: slide-in-right 0.135s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+
+  .slide-out-left {
+    animation: slide-in-left 0.135s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse
+      both;
+  }
+
+  .slide-out-right {
+    animation: slide-in-right 0.135s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      reverse both;
+  }
+
+  @keyframes slide-in-left {
+    0% {
+      transform: translateX(-270px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slide-in-right {
+    0% {
+      transform: translateX(270px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+}
